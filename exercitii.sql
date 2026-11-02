@@ -340,33 +340,3 @@ WHERE
     AND a.cod_restaurant (+) = r.cod_restaurant
 GROUP BY
     l.cod_locatie;
-
-
-
-
-[
-    {"keys": ["alt+z"],
-        "command": "toggle_setting",
-        "args": {
-            "setting": "word_wrap"
-        }
-    },
-    { "keys": ["ctrl+d"], "command": "duplicate_line" }, 
-    { "keys": ["alt+up"], "command": "swap_line_up" },
-    { "keys": ["alt+down"], "command": "swap_line_down" },
-    { "keys": ["shift+alt+left"], "command": "move_to", "args": {"to": "bol", "extend": true} },
-    { "keys": ["shift+alt+right"], "command": "move_to", "args": {"to": "eol", "extend": true} },
-    { "keys": ["alt+shift+up"], "command": "noop"  },
-    { "keys": ["alt+shift+down"], "command": "noop" },
-    { "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
-    { "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
-    { "keys": ["alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-    { "keys": ["alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false} },
-    { "keys": ["ctrl+shift+l"], "command": "find_all_under" },
-]
-{
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
-	"font_size": 20,
-	"save_on_focus_lost": true,
-	"theme": "Adaptive.sublime-theme"
-}
